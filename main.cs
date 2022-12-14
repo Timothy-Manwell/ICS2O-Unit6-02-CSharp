@@ -2,8 +2,8 @@ using System;
 using System.Threading.Tasks;
 using System.IO;
 
-class Program {
-  public static async Task Main()
+class Program{
+    public static async Task Main()
     {
         string answer = null;
         var counter = 0;
@@ -12,10 +12,10 @@ class Program {
         {
             Console.WriteLine("Do you want to quit? ('yes' or 'no')");
             answer = Console.ReadLine();
-    
+
             if (answer == "yes")
             {
-              counter = counter + 10000;
+                 counter = counter + 10000;
             }
             else if (answer == "no")
             {
@@ -23,11 +23,11 @@ class Program {
                 var newTotal = counter;
                 await File.WriteAllTextAsync("WriteText.txt", newTotal.ToString());
                 Console.WriteLine("File Created ...");
-                
+
                 var someText = await File.ReadAllTextAsync(@"WriteText.txt");
                 Console.WriteLine(someText);
-                }
-             Console.WriteLine("\nDone");
             }
+          Console.WriteLine("\nDone");
         }
     }
+}
