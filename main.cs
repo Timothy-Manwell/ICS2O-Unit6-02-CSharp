@@ -2,7 +2,8 @@ using System;
 using System.Threading.Tasks;
 using System.IO;
 
-class Program{
+class Program
+{
     public static async Task Main()
     {
         string answer = null;
