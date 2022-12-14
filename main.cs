@@ -15,7 +15,7 @@ class Program{
 
             if (answer == "yes")
             {
-                 counter = counter + 10000;
+                counter = counter + 10000;
             }
             else if (answer == "no")
             {
@@ -27,7 +27,7 @@ class Program{
                 var someText = await File.ReadAllTextAsync(@"WriteText.txt");
                 Console.WriteLine(someText);
             }
-          Console.WriteLine("\nDone");
+            Console.WriteLine("\nDone");
         }
     }
 }
